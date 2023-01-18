@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    position: relative;
+    width: 720px;
+    margin: 0 auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+section {
+    width: 720px;
+    height: 100vh;
+    margin: 0 auto;
+    scroll-snap-align: start;
+    background-color: cornflowerblue;
+    border: 2px black solid;
+}
+
+#last-card {
+    height: 10vh;
+}
