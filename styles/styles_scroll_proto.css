@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -16,10 +21,15 @@ main {
     width: 720px;
     height: 100vh;
     padding-top: 10vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 10vh;
 }
 section {
     width: 720px;
     height: 80vh;
+    scroll-snap-align: start;
     background-color: cornflowerblue;
     border: 2px black solid;
 }
