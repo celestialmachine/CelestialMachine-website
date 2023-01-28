@@ -16,13 +16,13 @@ function getStarField(sfWidth, sfHeight, starCount) {
 };
 
 document.addEventListener("DOMContentLoaded", function(){
-    const sf = document.getElementById("starfield");
+    const sf1 = document.getElementById("starfield1");
     const sf2 = document.getElementById("starfield2");
     const sf3 = document.getElementById("starfield3");
     const contentDiv = document.getElementById("contentField");
     let sfWidth = screen.width;
     let sfHeight = contentDiv.offsetHeight;
-    sf.style.boxShadow = getStarField(sfWidth, sfHeight / 5, 200);
+    sf1.style.boxShadow = getStarField(sfWidth, sfHeight / 5, 200);
     sf2.style.boxShadow = getStarField(sfWidth, sfHeight / 3.5, 80);
     sf3.style.boxShadow = getStarField(sfWidth, sfHeight, 30)
 });
