@@ -6,9 +6,9 @@ function getCoordinates(sfWidth, sfHeight) {
     return [x, y];
 }
 
-function getStarField(sfWidth, sfHeight, starcount) {
+function getStarField(sfWidth, sfHeight, starCount) {
     let field = " 1px 1px #fff";
-    for (let i = 0; i < starcount; i++){
+    for (let i = 0; i < starCount; i++){
         let [x, y] = getCoordinates(sfWidth, sfHeight);
         field += ", " + x.toString() + "px " + y.toString() + "px #fff";
     }
@@ -18,10 +18,11 @@ function getStarField(sfWidth, sfHeight, starcount) {
 document.addEventListener("DOMContentLoaded", function(){
     const sf = document.getElementById("starfield");
     const sf2 = document.getElementById("starfield2");
-    const containerDiv = document.getElementById("containerField");
+    const sf3 = document.getElementById("starfield3");
     const contentDiv = document.getElementById("contentField");
-    let sfWidth = containerDiv.offsetWidth;
+    let sfWidth = screen.width;
     let sfHeight = contentDiv.offsetHeight;
     sf.style.boxShadow = getStarField(sfWidth, sfHeight / 5, 200);
-    sf2.style.boxShadow = getStarField(sfWidth, sfHeight / 3.5, 50);
+    sf2.style.boxShadow = getStarField(sfWidth, sfHeight / 3.5, 80);
+    sf3.style.boxShadow = getStarField(sfWidth, sfHeight, 30)
 });

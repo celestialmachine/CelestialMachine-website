@@ -28,6 +28,45 @@ body {
     perspective: 10px;
 }
 
+#starfield {
+    width: .6px;
+    height: .6px;
+    background: transparent;
+    float: left;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) scale(10);
+    position: absolute;
+    overflow: hidden;
+    left: -5000px;
+    top: -2000px;
+}
+
+#starfield2 {
+    width: 1.2px;
+    height: 1.2px;
+    background: transparent;
+    float: left;
+    transform-style: preserve-3d;
+    transform: translateZ(-30px) scale(6);
+    position: absolute;
+    overflow: hidden;
+    left: -3000px;
+    top: -1200px;
+}
+
+#starfield3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    float: left;
+    transform-style: preserve-3d;
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    overflow: hidden;
+    left: -1000px;
+    top: -600px;
+}
+
 main {
     width: 100%;
     background: linear-gradient(to bottom, #201c2f 0%, #100751 100%);
@@ -213,31 +252,7 @@ aside h1 {
     }
 }
 
-#starfield2 {
-    width: 1.2px;
-    height: 1.2px;
-    background: transparent;
-    float: left;
-    transform-style: preserve-3d;
-    transform: translateZ(-30px) scale(6);
-    position: absolute;
-    overflow: hidden;
-    left: -3000px;
-    top: -1200px;
-}
 
-#starfield {
-    width: .6px;
-    height: .6px;
-    background: transparent;
-    float: left;
-    transform-style: preserve-3d;
-    transform: translateZ(-50px) scale(10);
-    position: absolute;
-    overflow: hidden;
-    left: -5000px;
-    top: -2000px;
-}
 
 /* #stars {
   }
