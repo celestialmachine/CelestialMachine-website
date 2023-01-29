@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+<header>
+    <div id="top-nav">
+        <div id="logo"></div>
+        <nav id="menu">
+            <label for="drop-down-menu">&#9776;</label>
+            <input type="checkbox" id="drop-down-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <body>
     <div class="container">
         <div id="starfield1" class="starfield"></div>
@@ -14,23 +28,34 @@
         <main>
             <div class="content" id="contentField">
                 <section id="portfolio-content">
-                    <div id="profile-card-main" class="portfolio-card">Profile card for smaller screens</div>
-                    <div id="top-card" class="portfolio-card">
-                        <div class="project-image">
-                            <img src="images/view.jpg" alt="test">
-                        </div>
-                        <div class="project-content">
-                            <h2>PROJECT TITLE</h2>
-                            <h3>PROJECT SUB-TITLE</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, veniam blanditiis? Voluptas velit soluta atque impedit error id architecto quasi incidunt amet reprehenderit aperiam dignissimos tenetur, perferendis cum, mollitia quos placeat earum fuga. Ratione praesentium soluta nam dolorem, doloribus et repudiandae iure numquam exercitationem ducimus quam iusto minima minus veniam. </p>
-                            <a href="#" class="project-link-button">View Source</a>
+
+                    <div class="full-width white-bg">
+                        <div id="top-card">
+                            <div class="project-content">
+                                <h1>Hello, I'm Victor</h1>
+                                <h2>Digital Content Designer</h2>
+                                <a href="#contact" class="project-link-button small-button">Contact</a>
+                            </div>
+                            <div id="profile-pic">
+                                <img src="images/profile-pic-bw-512x512.png" alt="Profile Picture">
+                            </div>
                         </div>
                     </div>
-                    <div class="flag-area">
-                        <div class="flag">HTML</div>
-                        <div class="flag">CSS</div>
-                        <div class="flag">CSS</div>
+
+                    <div class="full-width blur-bg">
+                        <div class="portfolio-card">
+                            <div class="project-image">
+                                <img src="images/view.jpg" alt="test">
+                            </div>
+                            <div class="project-content">
+                                <h2>PROJECT TITLE</h2>
+                                <h3>PROJECT SUB-TITLE</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, veniam blanditiis? Voluptas velit soluta atque impedit error id architecto quasi incidunt amet reprehenderit aperiam dignissimos tenetur, perferendis cum, mollitia quos placeat earum fuga. Ratione praesentium soluta nam dolorem, doloribus et repudiandae iure numquam exercitationem ducimus quam iusto minima minus veniam. </p>
+                                <a href="#" class="project-link-button">View Source</a>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="portfolio-card reverse-card">
                         <div class="project-image">
                             <img src="images/view.jpg" alt="test">

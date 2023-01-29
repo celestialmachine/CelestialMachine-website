@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&family=Passion+One&family=Source+Code+Pro:wght@400;600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,33 +13,80 @@
     --default-radius: 15px;
     --card-height: 360px;
     --card-height-mobile: 720px;
+    --font-heading: 'Passion One', Sans-Serif;
+    --font-body: "Open Sans", Sans-Serif;
+    --font-code: 'Source Code Pro', Mono;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+header {
+    color: #F72585;
+    z-index: 1000;
+    overflow: hidden;
+    position: relative;    
+    box-shadow: 0 5px 5px hsla(240, 100%, 21%, .2);
+}
+#top-nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-right: #F72585 1px solid;
+}
+header ul {
+    list-style: none;
+    font-size: 0;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-left: #F72585 1px solid;
+}
+header ul a:visited {
+    text-decoration: none;
+    color: #F72585;
+}
+header ul a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #F72585;
+    transition: .5s;
+}
+
 body {
     color: white;
     overflow: hidden;
+    font-family: var(--font-body);
 }
 
 .container {
     height: 100vh;
     overflow-y: auto;
     perspective: 10px;
-    background: linear-gradient(to bottom, #201c2f 0%, #100751 100%);
+    /* background: linear-gradient(to bottom, #201c2f 0%, #100751 100%); */
 }
 
+/* Starfields */
 .starfield {
     background: transparent;
     float: left;
     transform-style: preserve-3d;
     position: absolute;
     overflow: hidden;
-    z-index: -10;
+    z-index: 0;
 }
-
 #starfield1 {
     width: .6px;
     height: .6px;
@@ -43,7 +94,6 @@ body {
     left: -5000px;
     top: -2000px;
 }
-
 #starfield2 {
     width: 1.2px;
     height: 1.2px;
@@ -51,7 +101,6 @@ body {
     left: -3000px;
     top: -1200px;
 }
-
 #starfield3 {
     width: 3px;
     height: 3px;
@@ -61,56 +110,100 @@ body {
 }
 
 main {
-    width: 100%;
 }
 
 .content {
-    max-width: 1200px;
     margin: auto;
     display: flex;
     z-index: 10;
+    /* background: linear-gradient(to bottom, #201c2f 0%, #100751 100%); */
+    background: #00006b; 
+    /* background: -webkit-linear-gradient(to bottom, #00006b, #8c0d71);  */
+    background: linear-gradient(180deg, #00006b, #8c0d71);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: 800;
+}
+
+.small-button {
+    max-width: 250px;
 }
 
 #profile-card-main {
     height: 20vh;
 }
 
-.bottom-button {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    font-size: 1.5rem;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    background-color: white;
-}
-
-.bottom-button:hover {
-    background-color: blue;
-}
-
-.bottom-button p:visited {
-    text-decoration: none;
-}
-
 #portfolio-content {
     width: 100%;
-    display: inline-block;
-    padding: .5rem;
+    overflow: hidden;
+}
+
+#top-card {
+    margin: .5rem;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    color: #F72585;
+    max-width: 1200px;
+}
+
+#top-card a {
+    background-color: #F72585;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.white-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+}
+
+#profile-pic img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    height: 350px;
+    width: 350px;
+    backdrop-filter: blur(1px);
+    /* background-color: #d113a8; */
+    background-color: #00006b;
+    margin-right: 1.5rem;
 }
 
 #profile-card-main {
 
 }
 
+.full-width {
+    overflow: hidden;
+    width: 100%;
+}
+.blur-bg {
+    background-color: hsla(0, 100%, 100%, 0.1);
+    backdrop-filter: blur(1px);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
 .portfolio-card {
     height: var(--card-height);
     overflow: hidden;
     margin-top: 1rem;
-    border-radius: var(--default-radius);
+    /* border-radius: var(--default-radius); */
     display: flex;
+    max-width: 1200px;
+    margin: 8rem auto;
 }
 
 .reverse-card {
@@ -120,6 +213,7 @@ main {
 .project-image {
     flex-grow: 2;
     overflow: hidden;
+    backdrop-filter: opacity(100%);
 }
 
 .project-content {
@@ -128,16 +222,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: hsla(0, 100%, 100%, 0.1);
-    backdrop-filter: blur(2px);
-}
-
-.project-content h2 {
-    font-size: 2.5rem;
-}
-
-.project-content h3 {
-    font-size: 1.2rem;
+    overflow: hidden;
 }
 
 .project-link-button, .project-link-button:visited {
@@ -151,26 +236,23 @@ main {
     float: right;
 }
 
-.flag-area {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding-left: 1rem;
-}
-
-.flag {
-    padding: 1rem;
-}
-
 @media (max-width: 600px) {
     .portfolio-card {
         flex-direction: column;
         height: var(--card-height-mobile);
     }
+    #top-card {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5rem .5rem;
+    }
+    #top-card .project-content{
+        align-items: center;
+    }
     .portfolio-image {
-        border-radius: var(--default-radius) var(--default-radius) 0 0;
+        /* border-radius: var(--default-radius) var(--default-radius) 0 0; */
     }
     .portfolio-content {
-        border-radius: 0 0 var(--default-radius) var(--default-radius);
+        /* border-radius: 0 0 var(--default-radius) var(--default-radius); */
     }
 }
