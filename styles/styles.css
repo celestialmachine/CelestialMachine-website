@@ -36,6 +36,9 @@ header {
     justify-content: space-between;
     border-right: #F72585 1px solid;
 }
+#menu label, #drop-down-menu {
+    display: none;
+}
 header ul {
     list-style: none;
     font-size: 0;
@@ -110,6 +113,7 @@ body {
 }
 
 main {
+    
 }
 
 .content {
@@ -117,31 +121,34 @@ main {
     display: flex;
     z-index: 10;
     /* background: linear-gradient(to bottom, #201c2f 0%, #100751 100%); */
-    background: #00006b; 
+    /* background: #00006b;  */
     /* background: -webkit-linear-gradient(to bottom, #00006b, #8c0d71);  */
-    background: linear-gradient(180deg, #00006b, #8c0d71);
+    background: linear-gradient(180deg, #3A0CA3, #8c0d71);
 }
 
 h1 {
     font-family: var(--font-heading);
     font-size: 4rem;
+    margin: 1rem 1.5rem 0 1.5rem;
 }
 
 h2 {
     font-weight: 800;
     font-size: 2rem;
+    margin-top: 1rem;
+    margin: 1rem 1.5rem 0 1.5rem;
 }
 
 h3 {
     font-weight: 800;
+    margin: 1rem 1.5rem 0 1.5rem;
+}
+p {
+    margin: 1rem 1.5rem 0 1.5rem;
 }
 
 .small-button {
     max-width: 250px;
-}
-
-#profile-card-main {
-    height: 20vh;
 }
 
 #portfolio-content {
@@ -155,7 +162,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     margin: auto;
-    color: #F72585;
+    color: #fff;
     max-width: 1200px;
 }
 
@@ -177,12 +184,23 @@ h3 {
     width: 350px;
     backdrop-filter: blur(1px);
     /* background-color: #d113a8; */
-    background-color: #00006b;
     margin-right: 1.5rem;
 }
 
-#profile-card-main {
+#about-me {
+    max-width: 1200px;
+    padding: 3rem 0;
+    margin: auto;
+}
 
+#tool-kit {
+    text-align: center;
+}
+#tool-kit img{
+    margin-top: 1rem;
+}
+#tool-kit img:first-child{
+    margin-top: 2rem;
 }
 
 .full-width {
@@ -192,12 +210,12 @@ h3 {
 .blur-bg {
     background-color: hsla(0, 100%, 100%, 0.1);
     backdrop-filter: blur(1px);
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid #8150f3;
+    border-bottom: 1px solid #280972;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 15%);
 }
 
 .portfolio-card {
-    height: var(--card-height);
     overflow: hidden;
     margin-top: 1rem;
     /* border-radius: var(--default-radius); */
@@ -211,15 +229,17 @@ h3 {
 }
 
 .project-image {
-    flex-grow: 2;
+    flex: 1 1 0%;
     overflow: hidden;
+    max-height: 600px;
     backdrop-filter: opacity(100%);
+}
+.project-image img{
 }
 
 .project-content {
-    flex-grow: 3;
-    padding: 1.5rem;
     display: flex;
+    flex: 1 1 0%;
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
@@ -234,12 +254,71 @@ h3 {
     border-radius: var(--default-radius);
     text-decoration: none;
     float: right;
+    color: #F72585;
+    margin: 0 1.5rem;
+}
+
+.margin-collapse {
 }
 
 @media (max-width: 600px) {
+    header {
+        color: #F72585;
+        z-index: 1000;
+        position: relative;
+        top: 0;
+        box-shadow: 0 5px 5px hsla(240, 100%, 21%, .2);
+    }
+    #top-nav {
+        border: #F72585 1px solid;
+        display: flex;
+    }
+    #logo{
+        display: none;
+    }
+    #menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #menu label {
+        display: inline-block;
+        font-size: 2.5rem;
+        padding: .2rem 1rem;
+    }
+    #navItems {
+        display: none;
+        width: 100%;
+    }
+    #menu input:checked ~ #navItems {
+        display: block;
+    }
+    header ul {
+        list-style: none;
+    }
+    header ul a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        font-weight: 600;
+        font-size: 1rem;
+        border-top: #F72585 1px solid;
+        border-left: none;
+    }
+    header ul a:visited {
+        text-decoration: none;
+        color: #F72585;
+    }
+    header ul a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #F72585;
+        transition: .5s;
+    }
+
     .portfolio-card {
         flex-direction: column;
-        height: var(--card-height-mobile);
     }
     #top-card {
         flex-direction: column-reverse;
@@ -250,9 +329,7 @@ h3 {
         align-items: center;
     }
     .portfolio-image {
-        /* border-radius: var(--default-radius) var(--default-radius) 0 0; */
     }
     .portfolio-content {
-        /* border-radius: 0 0 var(--default-radius) var(--default-radius); */
     }
 }

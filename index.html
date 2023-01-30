@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<header>
-    <div id="top-nav">
-        <div id="logo"></div>
-        <nav id="menu">
-            <label for="drop-down-menu">&#9776;</label>
-            <input type="checkbox" id="drop-down-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 <body>
     <div class="container">
+        <header>
+            <div id="top-nav">
+                <div id="logo"></div>
+                <nav id="menu">
+                    <label for="drop-down-menu">&#9776;</label>
+                    <input type="checkbox" id="drop-down-menu">
+                    <ul id="navItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div id="starfield1" class="starfield"></div>
         <div id="starfield2" class="starfield"></div>
         <div id="starfield3" class="starfield"></div>
@@ -29,7 +29,7 @@
             <div class="content" id="contentField">
                 <section id="portfolio-content">
 
-                    <div class="full-width white-bg">
+                    <div class="full-width">
                         <div id="top-card">
                             <div class="project-content">
                                 <h1>Hello, I'm Victor</h1>
@@ -43,6 +43,25 @@
                     </div>
 
                     <div class="full-width blur-bg">
+                        <div id="about-me">
+                            <h1>About me</h1>
+                            <h2>What I do</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa, facilis nesciunt dolorum deserunt, praesentium consequatur sit est nostrum ex eveniet ducimus veniam debitis iusto molestiae aliquid omnis quisquam? Fugit magni, dolores autem suscipit, iure ullam est sit cum ducimus numquam eum quia quasi id, esse consequuntur nihil quae? Amet assumenda fugiat hic sed eos cupiditate eum officia repellat atque?</p>
+                            <h2>What I use</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, reiciendis consectetur a facere porro ducimus eaque laboriosam vitae. Aliquam quasi tempore eos quos. Quidem magnam dicta aliquam aperiam esse debitis sint reiciendis in dignissimos! Rerum tenetur excepturi, aliquam cumque placeat, reprehenderit nesciunt aspernatur ipsum nihil quod commodi ex, error illum.</p>
+                            <div id="tool-kit">
+                                <!-- <a href="https://skillicons.dev"> -->
+                                <img src="https://skillicons.dev/icons?i=html,css,js,cs" alt="languages icons"/>
+                                <img src="https://skillicons.dev/icons?i=visualstudio,vscode,github,wordpress" alt="coding environment icons"/>
+                                <img src="https://skillicons.dev/icons?i=ai,ps,pr,ae" alt="adobe cs cloud icons"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="full-width">
+                        <div class="portfolio-card margin-collapse">
+                            <h1>Work & Projects</h1>
+                        </div>
                         <div class="portfolio-card">
                             <div class="project-image">
                                 <img src="images/view.jpg" alt="test">
@@ -66,7 +85,9 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, veniam blanditiis? Voluptas velit soluta atque impedit error id architecto quasi incidunt amet reprehenderit aperiam dignissimos tenetur, perferendis cum, mollitia quos placeat earum fuga. Ratione praesentium soluta nam dolorem, doloribus et repudiandae iure numquam exercitationem ducimus quam iusto minima minus veniam.</p>
                         </div>
                     </div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
+                    <div class="full-width blur-bg">
+                        <div class="portfolio-card"><p>portfolio content</p></div>
+                    </div>
                     <div class="portfolio-card"><p>portfolio content</p></div>
                     <div class="portfolio-card"><p>portfolio content</p></div>
                     <div class="portfolio-card"><p>portfolio content</p></div>
@@ -75,7 +96,6 @@
                     <div class="portfolio-card"><p>portfolio content</p></div>
                     <div class="portfolio-card" id="contact">
                         <a href="#top-card">Go to the top</a>
-                        <a href="#profile-card-main">Go to profile card</a>
                     </div>
                 </section>
             </div>
