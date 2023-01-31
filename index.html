@@ -58,19 +58,62 @@
                         </div>
                     </div>
 
-                    <div class="full-width">
+                    <div class="full-width" id="test">
                         <div class="portfolio-card margin-collapse">
                             <h1>Work & Projects</h1>
                         </div>
                         <div class="portfolio-card">
                             <div class="project-image">
-                                <img src="images/view.jpg" alt="test">
+                                <img src="images/chern-main.jpg" alt="test">
                             </div>
                             <div class="project-content">
-                                <h2>PROJECT TITLE</h2>
-                                <h3>PROJECT SUB-TITLE</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, veniam blanditiis? Voluptas velit soluta atque impedit error id architecto quasi incidunt amet reprehenderit aperiam dignissimos tenetur, perferendis cum, mollitia quos placeat earum fuga. Ratione praesentium soluta nam dolorem, doloribus et repudiandae iure numquam exercitationem ducimus quam iusto minima minus veniam. </p>
-                                <a href="#" class="project-link-button">View Source</a>
+                                <h2>Cassandra Hernandez Campaign</h2>
+                                <p>Provided graphic & web design services for both her election and re-election campaign. Digital designs included logos, digital flyers, social media illustrations, and custom graphics. Print media included mailers, flyers, street signs, & door hangers. I also deployed wordpress websites for both of her elections. </p>
+                                <!-- <img class="logos" src="https://skillicons.dev/icons?i=ai,ps,wordpress" alt="illustrator logo, photoshop logo, wordpress logo"/> -->
+                                <!-- <a href="#" class="project-link-button">View Gallery</a> -->
+
+                                <div class="row">
+                                    <div class="col">
+                                       <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+                                    </div>
+                                    <div class="col">
+                                       <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+                                    </div>
+                                    <div class="col">
+                                       <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+                                    </div>
+                                  </div>
+
+                                  <div id="Lightbox" class="modal">
+                                    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                                    <div class="modal-content">
+                                      <div class="slide">
+                                          <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+                                      </div>
+                                      <div class="slide">
+                                          <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
+                                      </div>    
+                                      <div class="slide">
+                                          <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+                                      </div>
+                                    
+                                      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                                      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                                    
+                                      <div class="dots">
+                                        <div class="col">
+                                          <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
+                                        </div>
+                                        <div class="col">
+                                          <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy car exploring offroad." />
+                                        </div>
+                                        <div class="col">
+                                          <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy car in the city." />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
                             </div>
                         </div>
                     </div>
@@ -102,5 +145,6 @@
         </main>
     </div>
     <script src="js/starfield.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>

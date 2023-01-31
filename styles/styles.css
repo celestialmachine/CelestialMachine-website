@@ -216,12 +216,12 @@ p {
 }
 
 .portfolio-card {
-    overflow: hidden;
     margin-top: 1rem;
     /* border-radius: var(--default-radius); */
     display: flex;
     max-width: 1200px;
     margin: 8rem auto;
+    align-items: center;
 }
 
 .reverse-card {
@@ -231,18 +231,33 @@ p {
 .project-image {
     flex: 1 1 0%;
     overflow: hidden;
-    max-height: 600px;
+    max-height: 400px;
     backdrop-filter: opacity(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project-image img{
+    width: 450px;
+    height: 450px;
 }
 
 .project-content {
     display: flex;
     flex: 1 1 0%;
     flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
+    justify-content: center;
+}
+.logos {
+    max-height: 60px;
+    backdrop-filter: opacity(100%);
+    margin-top: .5rem;
+}
+.project-content h2 {
+    margin-top: 0;
+}
+.project-content p {
+    font-size: 1.2rem;
 }
 
 .project-link-button, .project-link-button:visited {
@@ -255,13 +270,132 @@ p {
     text-decoration: none;
     float: right;
     color: #F72585;
-    margin: 0 1.5rem;
+    margin: .5rem 1.5rem;
 }
 
 .margin-collapse {
 }
 
-@media (max-width: 600px) {
+
+.preview {
+    width: 100%;
+}
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem .5rem;
+}
+  
+  .row > .col {
+    padding: 0 8px;
+}
+  
+  .col {
+    float: left;
+    width: 25%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 22px 0px 22px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: black;
+}
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0 0 0;
+    width: 90%;
+    max-width: 1200px;
+}
+.slide {
+    display: none;
+}
+  
+  .image-slide {
+    width: 100%;
+}
+  
+  .modal-preview {
+    width: 100%;
+}
+  
+  .dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+img.preview, img.modal-preview {
+    opacity: 0.6;
+}
+  
+  img.active,
+  .preview:hover,
+  .modal-preview:hover {
+    opacity: 1;
+}
+  
+  img.hover-shadow {
+    transition: 0.3s;
+}
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  .previous,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  .previous:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 720px) {
     header {
         color: #F72585;
         z-index: 1000;
@@ -331,5 +465,8 @@ p {
     .portfolio-image {
     }
     .portfolio-content {
+    }
+    .project-content h2 {
+        margin-top: 1rem;
     }
 }
