@@ -29,7 +29,7 @@
             <div class="content" id="contentField">
                 <section id="portfolio-content">
 
-                    <div class="full-width">
+                    <section class="full-width">
                         <div id="top-card">
                             <div class="project-content">
                                 <h1>Hello, I'm Victor</h1>
@@ -40,9 +40,9 @@
                                 <img src="images/profile-pic-bw-512x512.png" alt="Profile Picture">
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="full-width blur-bg">
+                    <section class="full-width blur-bg">
                         <div id="about-me">
                             <h1>About me</h1>
                             <h2>What I do</h2>
@@ -56,69 +56,82 @@
                                 <img src="https://skillicons.dev/icons?i=ai,ps,pr,ae" alt="adobe cs cloud icons"/>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="full-width" id="test">
-                        <div class="portfolio-card margin-collapse">
+                    <section class="full-width" id="test">
+                        <div class="portfolio-card">
                             <h1>Work & Projects</h1>
                         </div>
                         <div class="portfolio-card">
                             <div class="project-image">
-                                <img src="images/chern-main.jpg" alt="test">
+                                <img src="images/1-main.jpg" alt="test">
                             </div>
                             <div class="project-content">
                                 <h2>Cassandra Hernandez Campaign</h2>
                                 <p>Provided graphic & web design services for both her election and re-election campaign. Digital designs included logos, digital flyers, social media illustrations, and custom graphics. Print media included mailers, flyers, street signs, & door hangers. I also deployed wordpress websites for both of her elections. </p>
-                                <!-- <img class="logos" src="https://skillicons.dev/icons?i=ai,ps,wordpress" alt="illustrator logo, photoshop logo, wordpress logo"/> -->
-                                <!-- <a href="#" class="project-link-button">View Gallery</a> -->
-
-                                <div class="row">
-                                    <div class="col">
-                                       <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
-                                    </div>
-                                    <div class="col">
-                                       <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
-                                    </div>
-                                    <div class="col">
-                                       <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
-                                    </div>
-                                  </div>
-
-                                  <div id="Lightbox" class="modal">
-                                    <span class="close pointer" onclick="closeLightbox()">&times;</span>
-                                    <div class="modal-content">
-                                      <div class="slide">
-                                          <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
-                                      </div>
-                                      <div class="slide">
-                                          <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-                                      </div>    
-                                      <div class="slide">
-                                          <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
-                                      </div>
-                                    
-                                      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-                                      <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                                    
-                                      <div class="dots">
-                                        <div class="col">
-                                          <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
-                                        </div>
-                                        <div class="col">
-                                          <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy car exploring offroad." />
-                                        </div>
-                                        <div class="col">
-                                          <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy car in the city." />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
+                                <ul class="project-gallery">
+                                    <li>
+                                        <a href="images/1-main.jpg">
+                                            <img src="images/1-thumb.jpg" alt="first thumb">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/2-main.jpg">
+                                            <img src="images/2-thumb.jpg" alt="second thumb">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/3-main.jpg">
+                                            <img src="images/3-thumb.jpg" alt="third thumb">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/4-main.jpg">
+                                            <img src="images/4-thumb.jpg" alt="fourth thumb">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="project-link-button">View project page</a>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="portfolio-card reverse-card">
+                    <section class="full-width" id="test">
+                        <div class="portfolio-card reverse-card">
+                            <div class="project-image">
+                                <img src="images/1-main.jpg" alt="test">
+                            </div>
+                            <div class="project-content">
+                                <h2>Cassandra Hernandez Campaign</h2>
+                                <p>Provided graphic & web design services for both her election and re-election campaign. Digital designs included logos, digital flyers, social media illustrations, and custom graphics. Print media included mailers, flyers, street signs, & door hangers. I also deployed wordpress websites for both of her elections. </p>
+                                <ul class="project-gallery">
+                                    <li>
+                                        <a href="images/1-main.jpg">
+                                            <img src="images/1-thumb.jpg" alt="first thumb">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/2-main.jpg">
+                                            <img src="images/2-thumb.jpg" alt="second thumb">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/3-main.jpg">
+                                            <img src="images/3-thumb.jpg" alt="third thumb">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/4-main.jpg">
+                                            <img src="images/4-thumb.jpg" alt="fourth thumb">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="project-link-button">View project page</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="portfolio-card reverse-card">
                         <div class="project-image">
                             <img src="images/view.jpg" alt="test">
                         </div>
@@ -127,24 +140,21 @@
                             <h3>project sub title</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, veniam blanditiis? Voluptas velit soluta atque impedit error id architecto quasi incidunt amet reprehenderit aperiam dignissimos tenetur, perferendis cum, mollitia quos placeat earum fuga. Ratione praesentium soluta nam dolorem, doloribus et repudiandae iure numquam exercitationem ducimus quam iusto minima minus veniam.</p>
                         </div>
-                    </div>
-                    <div class="full-width blur-bg">
+                    </section>
+                    <section class="full-width blur-bg">
                         <div class="portfolio-card"><p>portfolio content</p></div>
-                    </div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
-                    <div class="portfolio-card"><p>portfolio content</p></div>
-                    <div class="portfolio-card" id="contact">
+                    </section>
+                    <section class="portfolio-card"><p>portfolio content</p></section>
+                    <section class="portfolio-card"><p>portfolio content</p></section>
+                    <section class="portfolio-card"><p>portfolio content</p></section>
+                    <section class="portfolio-card"><p>portfolio content</p></section>
+                    <section class="portfolio-card" id="contact">
                         <a href="#top-card">Go to the top</a>
-                    </div>
+                    </section>
                 </section>
             </div>
         </main>
     </div>
     <script src="js/starfield.js"></script>
-    <script src="js/lightbox.js"></script>
 </body>
 </html>
