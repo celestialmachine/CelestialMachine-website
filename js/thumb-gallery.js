@@ -3,11 +3,8 @@
 const $ = selector => document.querySelector(selector);
 
 const linkThumbnails = (gallery) => {
-    //get parent element(project-content), previous sibling(project-image)
-    // const contentContainer = gallery.parentElement;
-    // const mainImageContanier = contentContainer.previousElementSibling;
+    //get previous sibling(project-image)
     let mainImage = gallery.previousElementSibling;
-    // let mainImage = gallery.parentElement.previousElementSibling.firstElementChild;
     const thumbnails = gallery.querySelectorAll("a");
     //process thumbnails
     for(let thumbnail of thumbnails) {
