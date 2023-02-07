@@ -4,9 +4,9 @@ const $ = selector => document.querySelector(selector);
 
 const linkThumbnails = (gallery) => {
     //get parent element(project-content), previous sibling(project-image)
-    const contentContainer = gallery.parentElement;
-    const mainImageContanier = contentContainer.previousElementSibling;
-    let mainImage = mainImageContanier.firstElementChild;
+    // const contentContainer = gallery.parentElement;
+    // const mainImageContanier = contentContainer.previousElementSibling;
+    let mainImage = gallery.previousElementSibling;
     // let mainImage = gallery.parentElement.previousElementSibling.firstElementChild;
     const thumbnails = gallery.querySelectorAll("a");
     //process thumbnails

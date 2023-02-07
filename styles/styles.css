@@ -192,9 +192,16 @@ p {
     padding: 3rem 0;
     margin: auto;
 }
+#about-me p {
+    font-size: 1.2rem;
+}
+.text-center {
+    /* text-align: center; */
+}
 
 #tool-kit {
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 1.5rem;
 }
 #tool-kit img{
     margin-top: 1rem;
@@ -216,11 +223,10 @@ p {
 }
 
 .portfolio-card {
-    margin-top: 1rem;
     /* border-radius: var(--default-radius); */
     display: flex;
     max-width: 1200px;
-    margin: 8rem auto;
+    margin: 2rem auto;
     align-items: center;
     padding: 1rem;
 }
@@ -230,7 +236,7 @@ p {
 }
 
 .project-image {
-    flex: 1 1 0%;
+    flex: 1 0 50%;
     overflow: hidden;
     max-height: 400px;
     max-width: 600px;
@@ -238,10 +244,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
-.project-image img{
-    width: 450px;
-    height: 450px;
+.project-image > img{
+    width: 600px;
+    height: 600px;
 }
 
 .project-content {
@@ -262,10 +269,15 @@ p {
     font-size: 1.2rem;
 }
 .project-gallery {
+    position: fixed;
     list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-self: flex-end;
+    gap: .5rem;
+    padding: 1rem;
 }
 .project-gallery li {
-    display: inline;
 }
 
 .project-link-button, .project-link-button:visited {
