@@ -236,7 +236,7 @@ p {
 }
 
 .project-image {
-    flex: 1 0 50%;
+    flex: 1 0 60%;
     overflow: hidden;
     max-height: 400px;
     max-width: 600px;
@@ -253,7 +253,7 @@ p {
 
 .project-content {
     display: flex;
-    flex: 1 1 0%;
+    flex: 1 0 40%;
     flex-direction: column;
     justify-content: center;
 }
@@ -274,10 +274,26 @@ p {
     display: inline-flex;
     justify-content: center;
     align-self: flex-end;
-    gap: .5rem;
+    gap: 3rem;
     padding: 1rem;
 }
-.project-gallery li {
+.project-gallery a:focus {
+    outline: none;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    opacity: 0.2;
+}
+.grow:hover {
+    opacity: 0.5;
+}
+.grown {
+    transform: scale(1.4);
+    opacity: 1;
+}
+.grown:hover {
+    opacity: 1;
 }
 
 .project-link-button, .project-link-button:visited {
@@ -338,7 +354,7 @@ footer p {
     font-size: .7rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
     header {
         color: #F72585;
         z-index: 1000;
