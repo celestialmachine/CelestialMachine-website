@@ -94,12 +94,10 @@ body {
     width: .6px;
     height: .6px;
     transform: translateZ(-50px) scale(10);
-    /* left: -4750px;
-    top: -2247px; */
-    left: -2700px;
+    left: -4750px;
     top: -4750px;
 }
-/* #starfield2 {
+#starfield2 {
     width: 1.2px;
     height: 1.2px;
     transform: translateZ(-30px) scale(6);
@@ -112,7 +110,7 @@ body {
     transform: translateZ(-10px) scale(2);
     left: -1000px;
     top: -600px;
-} */
+}
 
 main {
     
