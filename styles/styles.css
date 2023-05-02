@@ -272,6 +272,10 @@ p {
 .project-content p {
     font-size: 1.2rem;
 }
+.tech-kit {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
 /* .project-gallery {
     position: fixed;
     list-style: none;
