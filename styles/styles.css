@@ -230,6 +230,11 @@ p {
     padding: 1rem;
 }
 
+#featured {
+    background-color: hsla(0, 100%, 100%, 0.1);
+    backdrop-filter: blur(1px);
+}
+
 .reverse-card {
     flex-direction: row-reverse;
 }
@@ -246,8 +251,8 @@ p {
     border-radius: 15px;
 }
 .project-image > img{
+    object-fit: cover;
     width: 600px;
-    height: 600px;
 }
 
 .project-content {
@@ -267,7 +272,7 @@ p {
 .project-content p {
     font-size: 1.2rem;
 }
-.project-gallery {
+/* .project-gallery {
     position: fixed;
     list-style: none;
     display: inline-flex;
@@ -278,7 +283,7 @@ p {
 }
 .project-gallery a:focus {
     outline: none;
-}
+} */
 
 .grow {
     transition: all .2s ease-in-out;
