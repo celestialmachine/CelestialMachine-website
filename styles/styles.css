@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -19,7 +20,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
 }
 
 header {
@@ -254,6 +254,9 @@ p {
     object-fit: cover;
     width: 600px;
 }
+.lg-hide {
+    display: none;
+}
 
 .project-content {
     display: flex;
@@ -276,18 +279,6 @@ p {
     margin-top: 1rem;
     margin-left: 1.5rem;
 }
-/* .project-gallery {
-    position: fixed;
-    list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    align-self: flex-end;
-    gap: 3rem;
-    padding: 1rem;
-}
-.project-gallery a:focus {
-    outline: none;
-} */
 
 .grow {
     transition: all .2s ease-in-out;
@@ -304,6 +295,10 @@ p {
     opacity: 1;
 }
 
+.project-links{
+    margin: 1rem 1.5rem;
+    align-self: flex-start;
+}
 .project-link-button, .project-link-button:visited {
     background-color: #F72585;
     font-size: 1.2rem;
@@ -311,8 +306,6 @@ p {
     border-radius: 4px;
     text-decoration: none;
     color: #fff;
-    margin: 1rem 1.5rem;
-    align-self: flex-start;
     backdrop-filter: opacity(100%);
 }
 .small-button {
@@ -437,6 +430,16 @@ footer p {
     #top-card .project-content{
         align-items: center;
         text-align: center;
+    }
+    .lg-hide{
+        display: flex;
+        max-width: 100%;
+    }
+    .lg-hide > img{
+        width: 100%;
+    }
+    .sm-hide{
+        display: none;
     }
     .portfolio-image {
     }
