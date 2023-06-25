@@ -31,7 +31,7 @@ html, body {
     margin: 0;
     font-family: var(--font-body);
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: visible;
     perspective: 10px;
     color: white;
     
