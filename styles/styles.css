@@ -22,61 +22,17 @@
 html {
 }
 
-header {
-    color: #F72585;
-    z-index: 1000;
-    overflow: hidden;
-    position: relative;    
-    box-shadow: 0 5px 5px hsla(240, 100%, 21%, .2);
-}
-#top-nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    border-right: #F72585 1px solid;
-}
-#menu label, #drop-down-menu {
-    display: none;
-}
-header ul {
-    list-style: none;
-    font-size: 0;
-}
-
-header ul li {
-    display: inline;
-}
-
-header ul a {
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    padding: 1rem 1.2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    border-left: #F72585 1px solid;
-}
-header ul a:visited {
-    text-decoration: none;
-    color: #F72585;
-}
-header ul a:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #F72585;
-    transition: .5s;
-}
-
 body {
     color: white;
     font-family: var(--font-body);
+    margin: auto;
 }
 
 .container {
     height: 100vh;
     overflow-y: auto;
     perspective: 10px;
+    margin: auto;
 }
 
 /* Starfields */
@@ -322,27 +278,6 @@ p {
 #socials img {
     width: 65px;
     margin: 0 1rem;
-}
-
-#go-to-top {
-    height: 100px;
-    width: 80px;
-    background-color: #F72585;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: var(--default-radius);
-}
-#go-to-top p {
-    margin: 0;
-    padding: 0;
-}
-#go-to-top-link:visited {
-    text-decoration: none;
-    color: #fff;
-}
-#top-arrow {
-    font-size: 3rem;
 }
 
 footer{
