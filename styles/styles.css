@@ -78,7 +78,6 @@ body {
     height: 100vh;
     overflow-y: auto;
     perspective: 10px;
-    /* background: linear-gradient(to bottom, #201c2f 0%, #100751 100%); */
 }
 
 /* Starfields */
@@ -120,9 +119,6 @@ main {
     margin: auto;
     display: flex;
     z-index: 10;
-    /* background: linear-gradient(to bottom, #201c2f 0%, #100751 100%); */
-    /* background: #00006b;  */
-    /* background: -webkit-linear-gradient(to bottom, #00006b, #8c0d71);  */
     background: linear-gradient(180deg, #3A0CA3, #8c0d71);
 }
 
