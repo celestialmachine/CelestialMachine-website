@@ -25,14 +25,14 @@ html {
 body {
     color: white;
     font-family: var(--font-body);
-    margin: auto;
+    margin: 0;
 }
 
 .container {
     height: 100vh;
     overflow-y: auto;
     perspective: 10px;
-    margin: auto;
+    margin: 0;
 }
 
 /* Starfields */
