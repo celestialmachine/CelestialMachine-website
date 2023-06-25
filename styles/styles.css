@@ -24,6 +24,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: linear-gradient(180deg, #3A0CA3, #8c0d71);
 }
 
 .container {
