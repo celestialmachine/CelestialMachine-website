@@ -31,10 +31,10 @@ html, body {
     margin: 0;
     font-family: var(--font-body);
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    z-index: -100;
     perspective: 10px;
     color: white;
-    
 }
 
 /* Starfields */
