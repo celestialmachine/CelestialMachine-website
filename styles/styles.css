@@ -23,8 +23,8 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     background-color: #280972;
+    z-index: -1000;
 }
 
 .container {
@@ -34,17 +34,15 @@ html, body {
     overflow-y: auto;
     perspective: 10px;
     color: white;
-    overflow-x: hidden;
     
 }
 
 /* Starfields */
 .starfield {
-    background: transparent;
+    /* background: transparent; */
     float: left;
     transform-style: preserve-3d;
     position: absolute;
-    overflow: hidden;
     z-index: 0;
 }
 #starfield1 {
@@ -71,7 +69,7 @@ html, body {
 
 main {
     background: linear-gradient(180deg, #3A0CA3, #8c0d71);
-    z-index: -10;
+    z-index: -100;
 }
 
 #contentField {
@@ -103,7 +101,6 @@ p {
 
 #portfolio-content {
     width: 100%;
-    overflow: hidden;
 }
 
 #top-card {
@@ -194,7 +191,6 @@ p {
 
 .project-image {
     flex: 1 0 60%;
-    overflow: hidden;
     max-height: 400px;
     max-width: 600px;
     backdrop-filter: opacity(100%);
