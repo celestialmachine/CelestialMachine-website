@@ -76,7 +76,7 @@ main {
     margin: auto;
     display: flex;
     z-index: 10;
-    background: linear-gradient(180deg, #3A0CA3, #8c0d71);
+    /* background: linear-gradient(180deg, #3A0CA3, #8c0d71); */
 }
 
 h1 {
