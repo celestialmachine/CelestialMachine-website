@@ -195,7 +195,7 @@ p {
     font-size: 1.2rem;
 }
 .text-center {
-    /* text-align: center; */
+    text-align: center;
 }
 
 #tool-kit {
@@ -447,5 +447,7 @@ footer p {
     }
     .project-content h2 {
         margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2.4rem;
     }
 }
