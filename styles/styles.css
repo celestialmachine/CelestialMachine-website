@@ -70,7 +70,6 @@ header ul a:hover {
 
 body {
     color: white;
-    overflow: hidden;
     font-family: var(--font-body);
 }
 
@@ -206,7 +205,6 @@ p {
 }
 
 .full-width {
-    overflow: hidden;
     width: 100%;
 }
 .blur-bg {
