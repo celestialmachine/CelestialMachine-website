@@ -71,13 +71,6 @@ main {
     background: linear-gradient(180deg, #3A0CA3, #8c0d71);
     z-index: -100;
 }
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance: none) and (stroke-color: transparent){
-    main{
-        background-color: transparent;
-    }
-}
-}
 
 #contentField {
     margin: auto;
@@ -209,6 +202,7 @@ p {
 .project-image > img{
     object-fit: cover;
     width: 600px;
+    border-radius: 5px;
 }
 .lg-hide {
     display: none;
